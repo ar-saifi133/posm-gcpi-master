@@ -1,0 +1,97 @@
+.leaflet-custom-geocoder {
+  position: relative !important;
+  top: 0px !important;
+  left: 0px !important;
+  width: 100%;
+  height: 28px;
+  border: 1px solid rgba(38, 38, 38, 0.30);
+  background: #FFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+  z-index: 1000;
+  margin-left: 30px !important;
+  margin-top: 16px !important;
+  
+}
+
+.leaflet-custom-geocoder::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'><path d='M9.91681 10.5469L13.4168 13.5219' stroke='%23262626' stroke-width='0.486111' stroke-linecap='round' stroke-linejoin='round'/><path d='M6.41667 11.7375C8.994 11.7375 11.0833 9.73957 11.0833 7.275C11.0833 4.81043 8.994 2.8125 6.41667 2.8125C3.83934 2.8125 1.75 4.81043 1.75 7.275C1.75 9.73957 3.83934 11.7375 6.41667 11.7375Z' stroke='%23262626' stroke-width='0.486111'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.leaflet-custom-geocoder input {
+  flex: 1;
+  margin-left: 24px; 
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  color: #262626;
+}
+
+.leaflet-custom-geocoder-list {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+  background: #FFFFFF;
+  border: 1px solid rgba(38,38,38,0.30);
+  border-top: none;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+
+  
+}
+
+.leaflet-custom-geocoder-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 12.25px;
+  font-weight: 300;
+
+
+  
+}
+
+
+.leaflet-custom-geocoder-list:empty {
+  display: none !important;
+}
+
+.leaflet-custom-geocoder-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: Montserrat !important;
+  font-size: 12.25px;
+  font-weight: 300;
+
+}
+
+/* .leaflet-custom-geocoder-list li:hover {
+  background: rgba(38,38,38,0.05);
+} */
+
+/* .leaflet-top.leaflet-left{
+  display: none !important;
+} */

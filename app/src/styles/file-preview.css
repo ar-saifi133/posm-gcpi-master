@@ -1,0 +1,19 @@
+.file-preview {
+ textarea {
+   margin-top: 8px;
+   width: 667px;
+   height: 264px;
+   border: 1px solid pink;
+   background: #262626;
+   color: #ffffff;
+   -webkit-user-drag: none !important; /* Chrome/Safari */
+   user-drag: none !important;         /* Standard */
+  
+ }
+}
+
+
+
+
+
+

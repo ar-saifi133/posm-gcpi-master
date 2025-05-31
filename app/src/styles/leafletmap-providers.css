@@ -1,0 +1,126 @@
+.map-style-toggle {
+  position: relative !important;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  border: none !important;
+  margin-top: 16px !important;
+  margin-right: 30px !important;
+}
+
+/* The little layer-icon button */
+.map-style-toggle button.layer-icon {
+  width: 28px;
+  height: 28px;
+  background: url('../assets/icons/layer-icon-new.png') no-repeat center center !important;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* The dropdown menu */
+.map-style-toggle .layer-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  /* padding: 6px 0; */
+  width: 137px;
+  border-radius: 7px;
+  border: 0.8px solid #434343;
+  background: rgba(38, 38, 38, 0.70);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  z-index: 1001;
+}
+
+/* hidden by default */
+.map-style-toggle .hidden {
+  display: none;
+}
+
+/* each option: space-between flexbox */
+.map-style-toggle .layer-option {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  /* padding: 8px 12px; */
+  font-family: Montserrat;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+  display: inline-flex;
+  padding: 2px 10px 2px 14px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+/* .map-style-toggle .layer-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+} */
+
+/* hide all checks */
+.map-style-toggle .check-icon {
+  opacity: 0;
+  transition: opacity 0.2s;
+  gap: 20px;
+}
+
+/* only the active option shows its check */
+.map-style-toggle .layer-option.active .check-icon {
+  opacity: 1;
+}
+
+/* align any leaflet-bar controls in a row */
+.leaflet-top.leaflet-left,
+.leaflet-top.leaflet-right {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+/* ensure icon+text are a flex row */
+.map-style-toggle .option-label {
+  display: flex;
+  align-items: center;    
+  gap: 10px;             
+}
+
+
+.map-style-toggle .option-label svg {
+  display: block;
+  width: 16px;           
+  height: 16px;
+}
+
+.map-style-toggle .layer-menu .layer-option {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;         
+  cursor: pointer;
+  margin-right: 23px;
+}
+
+
+.map-style-toggle .layer-menu .option-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;                       
+}
+
+
+.map-style-toggle .layer-menu .check-icon {
+  opacity: 0;
+  transition: opacity .1s;
+}
+.map-style-toggle .layer-menu .layer-option.active .check-icon {
+  opacity: 1;
+}

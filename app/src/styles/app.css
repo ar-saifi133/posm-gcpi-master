@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  position: relative;
+  height: 100%;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.main {
+  position: relative;
+  flex: 1;
+
+  .inner {
+    display: flex;
+    padding: 0;
+    flex-flow: column nowrap; 
+    height: 100%;
+    /* border: 2px solid rgb(0, 68, 255); */
+  }
+
+  .panel {
+    position: relative;
+    /* margin-top: 5px; */
+    background: #fff;
+    /* border: 2px solid rgb(51, 255, 0); */
+
+    &.left {
+      float: none;
+      height: 100%;              
+      /* width: 100%;             */
+      overflow: visible;
+      z-index: $z-leaflet;
+     
+    }
+
+    &.right {
+      float: none;
+      /* height: 40%;               */
+      /* width: 100%;       */
+         
+    }
+  }
+}
+
+.prevent-overflow {
+  overflow: hidden !important;
+}

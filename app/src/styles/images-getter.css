@@ -1,0 +1,111 @@
+.images-getter {
+  position: relative;
+  font-family: 'Montserrat';
+
+  .upload-toggle-button {
+    background-color: #2acfff;
+    color: black;
+    height: 32px;
+    width: 140px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+  }
+  .upload-dropzone-container {
+    display: flex;
+    justify-content: center;
+  }
+  .images-form {
+    position: absolute;
+    top: 40px;
+    width: 262px;
+  
+    background-color: #1e1e1e;
+    border: 1px solid rgba(140, 140, 140, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+ 
+
+    .dropdown-title {
+      padding: 12px 20px 15px 20px;
+      color: #33ccff;
+      font-size: 12px;
+      line-height: normal;
+      font-weight: 600;
+     
+    
+      font-family: Montserrat;
+      background-color: #262626;  
+    }
+
+    .dropzone-wrapper {
+      margin: 0;
+      .dropzone {
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: none;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        background-color: #00000033;
+
+      
+
+        /* &:hover {
+          background-color: #2a2a2a;
+        } */
+
+        .dropzone-content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          padding: 14px 41px 14px 20px;
+
+          width: 100%;
+        }
+
+        .icon {
+          width: 16px;
+          height: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+
+        .text {
+          font-size: 12px;
+          color: #ffffff;
+          font-weight: 500;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          font-family: Montserrat;
+
+        }
+        .text:hover {
+          color: #828282;
+        }
+      }
+    
+      &:last-child .dropzone {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}

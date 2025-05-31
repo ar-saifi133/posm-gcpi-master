@@ -1,0 +1,81 @@
+.export-modal {
+
+
+ .output {
+   padding: 1rem 1.5rem;
+  
+   table {
+     width: 500px;
+   }
+
+
+   td:first-child {
+     white-space: no-wrap;
+     vertical-align: top;
+   }
+
+
+   td:last-child {
+     width: 100%;
+   }
+
+
+   p {
+     display: inline-block;
+     margin-right: 1rem;
+     font-size: 1.1rem;
+     color: $text-light;
+     white-space: nowrap;
+   }
+
+
+   textarea {
+     width: 100%;
+     min-height: 200px;
+   }
+ }
+
+
+ .destination-projection {
+   width: 100%;
+     
+   box-sizing: border-box;
+   background: transparent;
+  
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 1px 12px;
+   gap: 10px;
+
+
+  
+   height: 28px;
+
+
+  
+   border: 0.5px solid #8C8C8C;
+   border-radius: 15px;
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+
+
+
+
+   color: #FFFFFF;
+
+
+
+
+
+
+ }
+}
+
+
+
+
