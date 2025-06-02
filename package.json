@@ -80,12 +80,12 @@
   "main": "n/a",
   "homepage": "/plugins/posm-gcpi/node_modules/ensightplus-posm-gcpi/",
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "build:plh": "GCPI_HOMEPAGE='/posm-gcpi' npm run build",
-    "deploy:latest": "GCPI_HOMEPAGE='/posmodm/show/latest/' npm run build && scp -rq ./build/. deploy@studio.stamen.com:www/posmodm/show/latest",
-    "test": "node scripts/test.js --env=jsdom"
-  },
+       "start": "node scripts/start.js",
+       "build": "node scripts/build.js",
+       "build:plh": "GCPI_HOMEPAGE='/plugins/posm-gcpi/node_modules/ensightplus-posm-gcpi/' npm run build",
+       "deploy:latest": "GCPI_HOMEPAGE='/posmodm/show/latest/' npm run build && scp -rq ./build/. deploy@studio.stamen.com:www/posmodm/show/latest",
+       "test": "node scripts/test.js --env=jsdom"
+     },
   "jest": {
     "moduleFileExtensions": [
       "jsx",
