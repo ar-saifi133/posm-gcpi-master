@@ -183,7 +183,33 @@ border-bottom-right-radius: 24px;
    justify-content: center;
    background: transparent;
    margin-top: 0px;
+   max-height: 351px;
+    overflow: auto; /* Enable vertical scrolling if content overflows */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 transparent /* For Firefox */
  }
+ .file-content::-webkit-scrollbar {
+  width: 5px; /* Scrollbar width */
+}
+
+
+.file-content::-webkit-scrollbar-thumb {
+  background-color: gray; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+
+.file-content::-webkit-scrollbar-track {
+  background: transparent; /* Track color (optional) */
+}
+
+
+/* For Firefox */
+.file-content {
+  scrollbar-width: thin;         /* "auto" or "thin" */
+  scrollbar-color: gray transparent; /* thumb and track */
+}
+
   .custom-table {
    border-collapse: collapse; /* no outer gaps */
    font-family: 'Montserrat', monospace;
