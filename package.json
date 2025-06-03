@@ -1,5 +1,5 @@
 {
-  "name": "gcpi",
+  "name": "ensightplus-posm-gcpi",
   "version": "1.0.0",
   "description": "Ground Control Point interface",
   "author": "Sean Connelley <connelley@stamen.com>",
@@ -78,11 +78,11 @@
   },
   "license": "BSD",
   "main": "n/a",
-  "homepage": "/plugins/posm-gcpi/node_modules/ensightplus-posm-gcpi/",
+  "homepage": "/plugins/posm-gcpi/node_modules/ensightplus-posm-gcpi/build",
   "scripts": {
        "start": "node scripts/start.js",
        "build": "node scripts/build.js",
-       "build:plh": "GCPI_HOMEPAGE='/plugins/posm-gcpi/node_modules/ensightplus-posm-gcpi/' npm run build",
+       "build:plh": "GCPI_HOMEPAGE='/plugins/posm-gcpi/node_modules/ensightplus-posm-gcpi/build' npm run build",
        "deploy:latest": "GCPI_HOMEPAGE='/posmodm/show/latest/' npm run build && scp -rq ./build/. deploy@studio.stamen.com:www/posmodm/show/latest",
        "test": "node scripts/test.js --env=jsdom"
      },
